@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+/* .sticky{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+} */
+header #promobar{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+}
+header #promobar p{
+    font-weight: bolder;
+    margin-bottom: 5px
+} 
+header #promobar small a{
+    color: white;
+}
+header nav #navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(225, 0, 0);
+}
+#navbar .navtop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    cursor: pointer;
+}
+header nav #navbar .navtop .nav-left{
+    display: flex;
+}
+header nav #navbar .navtop .nav-left .flag{
+    width: 26px;
+    height: 13px;
+    margin-right: 5px;
+} 
+header nav #navbar .navtop .nav-left span{
+    margin: 0px 5px;
+}
+header nav #navbar .navtop .nav-middle h1{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+header nav #navbar .navtop  .nav-right{
+    display: flex;
+    align-items: center;
+}
+header nav #navbar .navtop .nav-right i{
+    margin-right: 10px;
+}
+header nav #navbar .navtop  .nav-right p{
+    margin-right: 10px;
+}
+header nav #navbar .navbottom{
+    border-top: 1px solid rgb(191, 191, 191);
+}
+header nav #navbar .navbottom .categories{
+    padding: 5px;
+}
+header nav #navbar .navbottom .categories ul{
+    text-align: center;
+}
+header nav #navbar .navbottom .categories ul li{
+    display: inline-block; 
+    margin-right: 12px;   
+}
+header nav #navbar .navbottom .categories ul li a{
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Spotlight Sectiom */
+#spotlight{
+    position: relative;
+}
+#spotlight .video-sec video {
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+#spotlight .content{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    width: 30%;
+}
+#spotlight .content h2{
+    font-size: 37px;
+    text-transform: uppercase;
+}
+#spotlight .content p{
+    margin: 10px 0px;
+    font-weight: 400;
+}
+#spotlight .content button{
+    padding: 6px 38px;
+}
+#spotlight .content button a{
+    color: black;
+}
+
+/* Brands Section */
+#brands{
+    background-color: #f3e1db;
+    padding: 60px 40px;
+}
+#brands .brands-top{
+    text-align: center;
+    background-color: #f3e1db;
+}
+#brands .brands-top h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#brands .brands-bottom {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3e1db;
+}
+#brands .brands-bottom  .brands-img{
+    width: 360px;
+    height: 480px;
+}
+#brands .brands-bottom  .brands-img img{
+    width: 100%;
+    height: 100%;
+}
+#brands .brands-bottom .brands-bottom-left{
+    margin-right: 10px;
+}
+#brands .brands-bottom .brands-bottom-middle{
+    margin-right: 10px;
+}
+#brands .brands-bottom h4{
+    text-align: center;
+}
+
+/* Footer Section */
+#footer .wrapper{
+    display: flex;
+}
+#footer h3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#footer a{
+    color: white;
+}
+#footer p{
+    font-size: 12px;
+}
+#footer .footer-left{
+    background-color: #1f1f1f;
+    color: white;
+    width: 25%;
+    padding: 20px 30px;
+}
+#footer .footer-left p{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#footer .footer-left input{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(119, 119, 119);
+    padding: 5px 5px;
+}
+#footer .footer-left .input-box{
+    margin: 10px 0;
+}
+#footer .footer-left small{
+    font-size: 10px;
+}
+#footer .footer-left small a{
+    color: white;
+    text-decoration: underline;
+}
+#footer .footer-right{
+    background-color: black;
+    width: 85%;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .footer-right .footer-right-left ul li{
+    margin: 10px 0;
+    font-size: 14px;
+}
+#footer .footer-right .footer-icon{
+    margin: 40px 0px;
+}
+#footer .footer-right .footer-icon .fa-brands{
+    margin-right: 20px;
+}
+
+#footer .footer-right .footer-right-middle{
+    margin: 0px 30px;
+}
+#footer .footer-right .footer-right-middle ul li{
+    margin: 10px 0;
+    font-size: 14px;
+}
