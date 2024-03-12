@@ -11,12 +11,13 @@
     margin: 0 auto;
     max-width: 1280px;
 }
-/* .sticky{
+.sticky{
     position: fixed;
     top: 0;
+    width: 100%;
     background-color: white;
     z-index: 10;
-} */
+}
 header #promobar{
     text-align: center;
     background-color: black;
@@ -30,12 +31,12 @@ header #promobar p{
 header #promobar small a{
     color: white;
 }
-header nav #navbar{
+/* header nav #navbar{
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: rgb(225, 0, 0);
-}
+    background-color: rgb(251, 251, 251);
+} */
 #navbar .navtop{
     display: flex;
     justify-content: space-between;
