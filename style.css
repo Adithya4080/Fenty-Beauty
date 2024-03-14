@@ -31,7 +31,7 @@ header #promobar p{
 header #promobar small a{
     color: white;
 }
-#navbar .navtop{
+#navbar .navtop .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,8 +78,8 @@ header nav #navbar .navtop .nav-right i{
 header nav #navbar .navtop  .nav-right p{
     margin-right: 10px;
 }
-header nav #navbar .navbottom{
-    border-top: 1px solid rgb(191, 191, 191);
+header nav #navbar .navtop{
+    border-bottom: 1px solid rgb(191, 191, 191);
 }
 header nav #navbar .navbottom .categories{
     padding: 5px;
@@ -375,6 +375,9 @@ header nav #navbar .navbottom .categories ul li a{
     #brands .brands-top p{
         font-size: smaller;
     }
+    header #promobar .promobar-cont small{
+        font-size: 12px;
+    }
 }
 @media (max-width: 480px) {
     #brands .brands-bottom .brands-img{
@@ -384,6 +387,9 @@ header nav #navbar .navbottom .categories ul li a{
     #navbar .wrapper .navtop .nav-middle h1 {
         letter-spacing: 5px;
         white-space: nowrap;
+    }
+    header #promobar .promobar-cont small{
+        font-size: x-small;
     }
 
 }
