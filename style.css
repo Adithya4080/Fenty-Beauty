@@ -253,6 +253,9 @@ header nav #navbar .navbottom .categories ul li a{
         width: 100%;
         left: 0;
     }
+    #brands .brands-bottom h4{
+        margin-bottom: 10px;
+    }
     #footer .wrapper {
         flex-wrap: wrap;
     }
@@ -353,55 +356,39 @@ header nav #navbar .navbottom .categories ul li a{
 
 }
 @media (max-width: 640px) {
-    #spotlight .content {
-        position: relative;
-        width: 100%;
-        left: 0;
-    }
     #footer .footer-middle{
         flex-wrap: wrap;
         width: 100%;
-        align-items: center;
     }
     #footer .footer-middle .middle-right p {
         display: none;
     }
+    #footer .footer-middle .middle-right{
+        margin-left: 0px;
+    }
 }
 @media (max-width: 540px) {
-    #spotlight .content {
-        position: relative;
-        width: 100%;
-        left: 0;
-    }
     #brands .brands-top h2{
         white-space: nowrap;
-        font-size: medium;
+        font-size: large ;
     }
     #brands .brands-top p{
         font-size: smaller;
     }
 }
 @media (max-width: 480px) {
-    #spotlight .content {
-        position: relative;
-        width: 100%;
-        left: 0;
-    }
     #brands .brands-bottom .brands-img{
         width: 100%;
         height: 100%;
     }
-    #navbar .navtop .nav-middle h1{
+    #navbar .wrapper .navtop .nav-middle h1 {
         letter-spacing: 5px;
         white-space: nowrap;
-        font-size: x-small;
     }
 
 }
 @media (max-width: 360px) {
-    #spotlight .content {
-        position: relative;
-        width: 100%;
-        left: 0;
+    #navbar .wrapper .navtop .nav-middle h1{
+        letter-spacing: 2px;
     }
 }
