@@ -155,18 +155,16 @@ header nav #navbar .navbottom .categories ul li a{
     align-items: center;
     justify-content: center;
     background-color: #f3e1db;
+    gap: 1%;
 }
 #brands .brands-bottom .brands-bottom-left{
     width: 32%;
-    gap: 1%;
 }
 #brands .brands-bottom .brands-bottom-middle{
     width: 32%;
-    gap: 1%;
 }
 #brands .brands-bottom .brands-bottom-right{
     width: 32%;
-    gap: 1%;
 }
 #brands .brands-bottom .brands-img{
     width: 100%;
@@ -174,12 +172,6 @@ header nav #navbar .navbottom .categories ul li a{
 #brands .brands-bottom  .brands-img img{
     width: 100%;
     height: 100%;
-}
-#brands .brands-bottom .brands-bottom-left{
-    margin-right: 10px;
-}
-#brands .brands-bottom .brands-bottom-middle{
-    margin-right: 10px;
 }
 #brands .brands-bottom h4{
     text-align: center;
@@ -355,10 +347,10 @@ header nav #navbar .navbottom .categories ul li a{
 }
 @media (max-width: 768px) {
     #brands .brands-bottom .brands-bottom-left{
-        width: 50%;
+        width: 48%;
     }
     #brands .brands-bottom .brands-bottom-middle{
-        width: 50%;
+        width: 48%;
     }
     #brands .brands-bottom .brands-bottom-right{
         width: 50%;
@@ -393,6 +385,15 @@ header nav #navbar .navbottom .categories ul li a{
     }
     header #promobar .promobar-cont small{
         font-size: 12px;
+    }
+    #brands .brands-bottom .brands-bottom-left{
+        width: 50%;
+    }
+    #brands .brands-bottom .brands-bottom-middle{
+        width: 50%;
+    }
+    #brands .brands-bottom .brands-bottom-right{
+        width: 50%;
     }
 }
 @media (max-width: 480px) {
