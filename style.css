@@ -97,6 +97,40 @@ header nav #navbar .navbottom .categories ul li a{
     font-size: 14px;
 }
 
+/* Modal Section */
+#signInModal .modal-cont{
+    display: none;
+}
+#signInModal .modal{ 
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+}
+#signInModal .modal .modal-content{
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+}
+#signInModal .modal .modal-content h2{
+    margin-bottom: 15px;
+}
+#signInModal .modal .modal-content form{
+    display: flex;
+    flex-direction: column;
+}
+#signInModal .modal .modal-content form label {
+    margin-bottom: 10px;
+}
+#signInModal .modal .modal-content form input{
+    margin-bottom: 10px;
+}
+
 /* Spotlight Sectiom */
 #spotlight{
     position: relative;
@@ -173,7 +207,7 @@ header nav #navbar .navbottom .categories ul li a{
 }
 #brands .brands-bottom .brands-item .brands-list{
     width: 32%;
-    flex: 0 0 33%;
+    flex-basis: 33%;
     transition: transform 0.3 ease;
 }
 #brands .brands-bottom .brands-item .brands-list .brands-img{
@@ -186,6 +220,11 @@ header nav #navbar .navbottom .categories ul li a{
 #brands .brands-bottom h4{
     text-align: center;
 } 
+@keyframes fadein {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(0); }
+}
+
 
 /* Footer Section */
 #footer{
