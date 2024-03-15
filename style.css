@@ -149,33 +149,43 @@ header nav #navbar .navbottom .categories ul li a{
     text-transform: uppercase;
     font-size: 30px;
 }
-#brands .brands-bottom {
+#brands .brands-bottom{
+    position: relative;
+}
+#brands .brands-bottom .brands-btn{
+    position: absolute;
+    top: 0;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
     align-items: center;
-    justify-content: center;
-    background-color: #f3e1db;
+}
+#brands .brands-bottom .brands-btn button{
+    border: none;
+    font-size: 44px;
+}
+#brands .brands-bottom .brands-item{
+    display: flex;
     gap: 1%;
+    overflow: hidden;
+    transition: scroll-left 0.5s ease;
 }
-#brands .brands-bottom .brands-bottom-left{
+#brands .brands-bottom .brands-item .brands-list{
     width: 32%;
+    flex: 0 0 33%;
+    transition: transform 0.3 ease;
 }
-#brands .brands-bottom .brands-bottom-middle{
-    width: 32%;
-}
-#brands .brands-bottom .brands-bottom-right{
-    width: 32%;
-}
-#brands .brands-bottom .brands-img{
+#brands .brands-bottom .brands-item .brands-list .brands-img{
     width: 100%;
 }
-#brands .brands-bottom  .brands-img img{
+#brands .brands-bottom .brands-item .brands-list .brands-img img{
     width: 100%;
     height: 100%;
 }
 #brands .brands-bottom h4{
     text-align: center;
-}
+} 
 
 /* Footer Section */
 #footer{
@@ -346,16 +356,9 @@ header nav #navbar .navbottom .categories ul li a{
     }
 }
 @media (max-width: 768px) {
-    #brands .brands-bottom .brands-bottom-left{
-        width: 48%;
+    #brands .wrapper .brands-bottom .brands-item .brands-list{
+        flex-basis: 50%;
     }
-    #brands .brands-bottom .brands-bottom-middle{
-        width: 48%;
-    }
-    #brands .brands-bottom .brands-bottom-right{
-        width: 50%;
-    }
-
 }
 @media (max-width: 640px) {
     #footer .footer-middle{
@@ -386,14 +389,12 @@ header nav #navbar .navbottom .categories ul li a{
     header #promobar .promobar-cont small{
         font-size: 12px;
     }
-    #brands .brands-bottom .brands-bottom-left{
-        width: 50%;
+    #brands .wrapper .brands-bottom .brands-item .brands-list{
+        flex-basis: 100%;
     }
-    #brands .brands-bottom .brands-bottom-middle{
-        width: 50%;
-    }
-    #brands .brands-bottom .brands-bottom-right{
-        width: 50%;
+    #brands .wrapper .brands-bottom .brands-item .brands-list .brands-img{
+        width: 100%;
+        align-items: center;
     }
 }
 @media (max-width: 480px) {
